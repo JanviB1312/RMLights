@@ -1,5 +1,5 @@
 import Link from "next/link";
-import LogoImage from "@/public/Images/logo-transparent2.png";
+import LogoImage from "@/public/Images/logo_rm.png";
 import Image from "next/image";
 import { ourProducts } from "@/data";
 

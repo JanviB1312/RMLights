@@ -19,7 +19,7 @@
     "react-dom": "^18",
     "react-modal-video": "^2.0.1",
     "react-visibility-sensor": "^5.1.1",
-    "swiper": "^11.0.4"
+    "swiper": "^11.1.15"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",

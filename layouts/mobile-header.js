@@ -11,7 +11,7 @@ import {
 } from "../public/svg/social/IconSocial";
 import { ourProducts } from "@/data";
 import Image from "next/image";
-import LogoImage from "@/public/Images/logo-transparent2.png";
+import LogoImage from "@/public/Images/logo_rm.png";
 
 export default function MobileHeader() {
   const [isMobileMenu, setMobileMenu] = useState(false);

@@ -1,32 +1,29 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  Twitter,
-  Vk,
-} from "../public/svg/social/IconSocial";
 import { ourProducts } from "../data";
 import Image from "next/image";
-import LogoImage from "@/public/Images/logo-transparent2.png";
-import { Arrow_r, DownChevron, RightChevron } from "@/public/svg/icon";
+import LogoImage from "@/public/Images/logo_rm.png";
+import { RightChevron } from "@/public/svg/icon";
 
 export default function DesktopHeader() {
-  const [openProductId, setOpenProductId] = useState(null); // Manage which product's subProducts are visible
+  const [openProductId, setOpenProductId] = useState(null);
   const toggleSubProducts = (id) => {
-    setOpenProductId(openProductId === id ? null : id); // Toggle visibility of subProducts
+    setOpenProductId(openProductId === id ? null : id);
   };
 
   return (
     <>
       <div className="industify_fn_header">
-        <div className="header_inner">
+        <div className="header_inner" style={{ backgroundColor: "white" }}>
           <div className="menu_logo">
             <Link href="/">
               <Image
-                style={{ width: "250px", height: "300px", objectFit: "cover" }}
+                style={{
+                  width: "250px",
+                  height: "300px",
+                  objectFit: "contain",
+                }}
                 src={LogoImage}
                 width={400}
                 height={300}
@@ -42,13 +39,6 @@ export default function DesktopHeader() {
               <li className="menu-item-has-children">
                 <Link href="/products">Our Products</Link>
                 <ul className="sub-menu">
-                  {/* {ourProducts.map((item) => {
-                    return (
-                      <li key={item.id}>
-                        <Link href={`/products/${item.id}`}>{item.title}</Link>
-                      </li>
-                    );
-                  })} */}
                   {ourProducts.map((item) => (
                     <li key={item.id} className="relative group">
                       <Link
@@ -77,29 +67,7 @@ export default function DesktopHeader() {
                   ))}
                 </ul>
               </li>
-              {/* <li className="menu-item-has-children">
-                <Link href="#">Pages</Link>
-                <ul className="sub-menu">
-                  <li>
-                    <Link href="/gallery">Gallery</Link>
-                  </li>
-                  <li>
-                    <Link href="/404">404 Page</Link>
-                  </li>
-                  <li>
-                    <Link href="/principles">Our Principles</Link>
-                  </li>
-                  <li>
-                    <Link href="/services">Our Services</Link>
-                  </li>
-                  <li>
-                    <Link href="blog/blogFullPage">Blog Full</Link>
-                  </li>
-                  <li>
-                    <Link href="/protected">Protected Page</Link>
-                  </li>
-                </ul>
-              </li> */}
+
               <li>
                 <Link href="/about">About US</Link>
               </li>
@@ -108,38 +76,8 @@ export default function DesktopHeader() {
               </li>
             </ul>
           </div>
-          <div className="toll_free_lang">
-            {/* <div className="lang_switcher">
-                            <span onClick={activeTrueFalse} className="click">{isSelect}</span>
-                        </div> */}
-            {/* <div className={isActive ? "industify_fn_moving_lang opened" : "industify_fn_moving_lang"} style={{ "position": "absolute", "left": "1281.16px", "top": "105.085px" }}>
-                            <ul onClick={activeTrueFalse}>
-                                <li onClick={() => setSelect("Eng")}><span>Eng</span></li>
-                                <li onClick={() => setSelect("Spa")}><span>Spa</span></li>
-                                <li onClick={() => setSelect("Rus")}><span>Rus</span></li>
-                            </ul>
-                        </div> */}
-            {/* <div onClick={toggleTrueFalse} className={`nice-select ${isToggled ? "open" : ""}`}>
-                            <span className="current">{isSelect}</span>
-                            <ul className="list">
-                                <li onClick={() => setSelect("ENG")} className={`option ${isSelect == "ENG" && "selected focus"}`}>ENG</li>
-                                <li onClick={() => setSelect("SPA")} className={`option ${isSelect == "SPA" && "selected focus"}`}>SPA</li>
-                                <li onClick={() => setSelect("RUS")} className={`option ${isSelect == "RUS" && "selected focus"}`}>RUS</li>
-                            </ul>
-                        </div>
- */}
-            {/* <div className="toll_free">
-                            <span className="shape1"></span>
-                            <span className="shape2"></span>
-                            <span className="shape3"></span>
-                            <div className="tf_in">
-                                <div className="img_holder" style={{ backgroundImage: `url(${background})` }}></div>
-                                <p><span>Toll Free:</span> 1-800-987-6543</p>
-                            </div>
-                        </div> */}
-          </div>
+          <div className="toll_free_lang"></div>
         </div>
-        {/* <!-- /Header: Bottom Panel --> */}
       </div>
       <div className="my-class"></div>
     </>
