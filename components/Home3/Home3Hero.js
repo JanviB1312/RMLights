@@ -13,19 +13,21 @@ export default function Home3Hero() {
         <div className="container">
           <div className="content_holder max800">
             <div className="title_holder">
-              <h3>Crafting Excellence</h3>
+              <h3>About Us</h3>
               <p>
-                JR Bond is a forward-thinking company specializing in
-                construction chemicals, offering a robust range of products
-                including tile adhesives, block adhesives, epoxy grouts, and
-                waterproofing solutions. Despite being a new entity, JR Bond is
-                powered by a management team with over 20 years of industry
-                experience, ensuring a blend of innovation and reliability.
-                Committed to exceeding industry standards, JR Bond is accredited
-                with prestigious certifications like RAPL, MQA, and ISO
-                9001:2015, reflecting our dedication to quality and excellence.
-                Our mission is to build enduring partnerships and deliver
-                solutions that stand the test of time.
+                At RM Lights, we take immense pride in being a Proudly Made in
+                India LED lighting solutions provider. With a commitment to
+                quality, innovation, and sustainability, we deliver lighting
+                products designed to elevate every space they illuminate. Our
+                mission is to redefine the standards of the lighting industry by
+                offering cutting-edge solutions that blend efficiency with
+                exceptional design. Each product is crafted to meet the highest
+                benchmarks of performance, ensuring satisfaction from the moment
+                of installation and beyond. RM Lights is dedicated to supporting
+                India&apos;s vision of self-reliance and growth through our
+                focus on local manufacturing. By emphasizing integrity,
+                customer-centricity, and technological advancement, we continue
+                to illuminate lives and inspire brighter futures.
               </p>
             </div>
           </div>
@@ -34,8 +36,10 @@ export default function Home3Hero() {
           <div
             className="o_img"
             style={{
-              backgroundImage: `url(/Images/tile-about-bg-2.jpg)`,
+              backgroundImage: `url(/Images/bg2.jpg)`,
               backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
             }}
           ></div>
           <div className="o_color"></div>

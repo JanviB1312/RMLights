@@ -1,5 +1,4 @@
 "use client";
-import { ourProducts } from "@/data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";

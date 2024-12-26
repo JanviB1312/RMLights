@@ -1,12 +1,14 @@
 import Layout from "@/layouts/layout";
-import JRHomeProduct from "@/components/Home2/JRHomeProduct";
-import JRHome3Service from "@/components/Home3/JRHome3Service";
 import HomeSlider from "@/components/Home/HomeSlider";
 import AboutUs from "@/components/Home/AboutUs";
-import ProductSlider from "@/components/Home/productSlider";
+
+import WhyChooseUs from "@/components/Home/WhyChooseUs";
+import Counter from "@/components/Home/Counter";
+import NeedHelp from "@/components/Home/NeedHelp";
+import ProductSlider from "@/components/Home/ProductSlider";
 
 export const metadata = {
-  title: "JR Bond | Home",
+  title: "RM Lights | Home",
 };
 
 export default function home() {
@@ -16,8 +18,9 @@ export default function home() {
         <HomeSlider />
         <AboutUs />
         <ProductSlider />
-
-        {/* <JRHome3Service /> */}
+        <WhyChooseUs />
+        <Counter />
+        <NeedHelp />
       </Layout>
     </>
   );

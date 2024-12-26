@@ -4,12 +4,16 @@ import React from "react";
 
 const ContactCard = ({ icon, title, content }) => {
   return (
-    <div className="group bg-white p-6 rounded-lg shadow-lg border-solid border-4 border-transparent hover:border-theme-cyan hover:scale-105 transition-all duration-300 text-center flex flex-col items-center">
+    <div className="group bg-white p-6 rounded-lg shadow-lg border-solid border-4 border-transparent hover:border-[#213dfc] hover:scale-105 transition-all duration-300 text-center flex flex-col items-center">
       <div className="my-4 border-solid border group-hover:bg-gray-200 border-transparent p-3 bg-gray-100 rounded-full">
         {icon}
       </div>
       <p className="font-semibold text-base">{title}</p>
-      <p>{content}</p>
+      <p
+        dangerouslySetInnerHTML={{
+          __html: content, // Allows the HTML in the string to be rendered
+        }}
+      />
     </div>
   );
 };
@@ -32,7 +36,7 @@ const ContactInfo = () => {
               </svg>
             }
             title="Mail Here"
-            content="info@jrbondconchem.com"
+            content="sagarchoudhari763@gmail.com <br/> rmlightsindustriesltd4447@gmail.com"
           />
           <ContactCard
             icon={
@@ -48,7 +52,7 @@ const ContactInfo = () => {
               </svg>
             }
             title="Visit Here"
-            content="Bandhunagar, 8-A National Highway, Near Samsun Ceramic, Morbi-363642, Gujarat-BHARAT."
+            content="Gut No 102 Gao road, Pisadevi, Aurangabad (MH), Aurangabad, Aurangabad, Maharashtra, India, 431001"
           />
           <ContactCard
             icon={
@@ -63,7 +67,7 @@ const ContactInfo = () => {
               </svg>
             }
             title="Call Here"
-            content="+91 9879100037"
+            content="+91 9767944447"
           />
         </div>
       </div>

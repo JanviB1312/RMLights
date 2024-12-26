@@ -27,8 +27,8 @@ const openSans = Open_Sans({
 
 export const metadata = {
   title: {
-    template: "JR Bond | %s",
-    default: "JR Bond",
+    template: "RM Lights | %s",
+    default: "RM Lights",
   },
 };
 

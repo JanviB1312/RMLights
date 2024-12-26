@@ -1,89 +1,53 @@
-import Layout from "@/layouts/layout";
-import Sidebar from "@/layouts/sidebar";
+"use client";
 import Link from "next/link";
-import { ourProducts } from "../../data";
-import Breadcrumb from "@/layouts/breadcumb";
-
-export const metadata = {
-  title: "JR Bond | Our Products",
-};
+import Layout from "@/layouts/layout";
+import { products } from "../../data.js";
+import NeedHelp from "@/components/Home/NeedHelp.js";
 
 export default function page() {
   return (
     <Layout>
-      <Breadcrumb firstChild={"Services"} />
-      <div className="industify_fn_sidebarpage">
-        <div className="container">
-          <div className="s_inner">
-            {/* Main Sidebar: Left */}
-            <div className="industify_fn_leftsidebar">
-              <ul className="industify_fn_service_list">
-                {ourProducts.map((item) => {
-                  return (
-                    <li key={item.id}>
-                      <div className="item">
-                        <div className="item_in">
-                          <div className="img_holder">
-                            <div
-                              className="img_abs"
-                              style={{
-                                marginTop: "35px",
-                                backgroundImage: `url(${item.image})`,
-                              }}
-                            ></div>
-                            <Link href={`/products/${item.id}`}></Link>
-                          </div>
-                          <div className="title">
-                            <h3>
-                              <Link href={`/products/${item.id}`}>
-                                {item.title.toUpperCase()} (
-                                {item.subProducts.length})
-                              </Link>
-                            </h3>
-                            <p>{item.description}</p>
-                          </div>
-                          <div className="read_more">
-                            <Link href={`/products/${item.id}`}>Read More</Link>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  );
-                })}
-              </ul>
-
-              <div className="clearfix"></div>
-            </div>
-
-            <div className="industify_fn_rightsidebar">
-              {/* Service List */}
-              <div className="service_list_as_function">
-                <div className="title">
-                  <h3>Full list of Services</h3>
-                </div>
-                <div className="list_holder">
-                  <ul>
-                    {ourProducts.map((item) => {
-                      return (
-                        <li key={item.id}>
-                          <Link href={`/products/${item.id}`}>
-                            {item.title}
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </div>
-              {/* /Service List */}
-
-              {/* Get Sidebar */}
-              <Sidebar />
-              {/* /Get Sidebar */}
-            </div>
-          </div>
-        </div>
+      <div className="pro-header">
+        <h1 className="pro-title-header">Our Products</h1>
       </div>
+      <div className="pro-container">
+        {products.map((product, index) => {
+          const isImageLeft = index % 2 === 0;
+
+          return (
+            <div
+              key={index}
+              className={`pro-product ${
+                isImageLeft ? "pro-image-left" : "pro-image-right"
+              }`}
+            >
+              <div className="pro-image-container">
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  className="pro-image"
+                />
+              </div>
+
+              <div className="pro-text-container">
+                <h2 className="pro-title">{product.title}</h2>
+                <p className="pro-description">{product.description}</p>
+                <ul className="pro-bullet-list">
+                  {product.bullets.map((bullet, idx) => (
+                    <li key={idx} className="pro-bullet-item">
+                      {bullet}
+                    </li>
+                  ))}
+                </ul>
+                <Link href="/contact">
+                  <button className="pro-button">Get a Free Estimate</button>
+                </Link>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <NeedHelp />
     </Layout>
   );
 }

@@ -104,7 +104,7 @@ export default function Home4Partners() {
                     <div className="item">
                       <button
                         type="submit"
-                        class="inline-block h-12 leading-[50px] px-5 bg-black text-white rounded-sm no-underline hover:bg-theme-cyan"
+                        class="inline-block h-12 leading-[50px] px-5 bg-black text-white rounded-sm no-underline hover:bg-[#213dfc]"
                       >
                         Send Message
                       </button>

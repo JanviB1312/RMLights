@@ -7,7 +7,7 @@ export const sliderData = [
   },
 ];
 
-export const products = [
+export const homeProducts = [
   {
     src: "images/slider/p1.png",
     alt: "Product 1",
@@ -34,70 +34,116 @@ export const products = [
     title: "LED EMERGENCY BULB",
   },
 ];
-
-export const ourProducts = [
+export const products = [
   {
-    id: "tile-adhesives",
-    title: "Tile Adhesives",
+    id: 1,
+    title: "LED Emergency Bulb",
     description:
-      "Strong, reliableeeeeeee tile adhesives ensuring secure installation with excellent bonding for both residential and commercial applications.",
-    sliderImage: "/Images/tiles.jpg",
-    image: "/img/products/tileadhesive.jpg",
-    homeImageSrc: "/img/products/tileadhesive.jpg",
-    subProducts: [
-      {
-        id: "silver",
-        title: "Silver",
-        image: "/img/products/silver.png",
-        description: "",
-
-        details: [
-          {
-            label: "Description",
-            contentType: "paragraph",
-            content: `Silver is a polymer modified grey coloured cement base powder tile adhesive`,
-          },
-
-          {
-            label: "Packing",
-            contentType: "paragraph",
-            content: `20kg bag`,
-          },
-          {
-            label: "Application",
-            contentType: "unordered_list",
-            content: `
-            – Ideal for fixing ceramic tiles on wall & floor and vitrified tiles on floor.
-  – For interior usage only.`,
-          },
-          {
-            label: "Surface Preperation",
-            contentType: "paragraph",
-            content: `All surface must be sound & thoroughly cleaned to remove all loose particles, traces of oil, grease & high points before application.`,
-          },
-          {
-            label: "Guideline for usage",
-            contentType: "ordered_list",
-            content: `
-            (1) Remove any oil, dust, and grease from the surface.
-  (2) Pour water into a bucket.
-  (3) Add the powder to the water and mix thoroughly.
-  (4) Stir the mixture well, preferably using a mechanical mixer or manually.
-  (5) Apply the adhesive to the surface with the flat side of the trowel.
-  (6) Spread the adhesive evenly using the notched side of the trowel.
-  (7) If necessary, apply a layer of adhesive to the back of the tiles (back buttering).
-  (8) Place the tiles onto the surface and tap them firmly to ensure full coverage on the back.
-  (9) Remove any excess adhesive from the tile surface.
-  (10) Allow the adhesive to set for 24 hours before proceeding with grouting.
-            `,
-          },
-          {
-            label: "Storage",
-            contentType: "paragraph",
-            content: `Store in a off ground, cool, dry area in factory sealed packaging, high humidity may reduce shelf life of product.`,
-          },
-        ],
-      },
+      "The perfect solution for constant power failure. It lights up immediately during power cuts and auto-charges when power is available.",
+    bullets: [
+      "Battery Backup up to 4 Hours",
+      "LED Life 25000 Hours",
+      "Operating Voltage 230V AC @50Hz",
+      "LED Beam Angle 120°",
+      "IP Rating 200°",
     ],
+    image: "images/slider/p5.png",
+  },
+  {
+    id: 2,
+    title: "LED Bulb",
+    description:
+      "Efficient lighting with energy-saving technology. Brightens up your space with minimal power consumption.",
+    bullets: [
+      "Long-lasting durability",
+      "Energy-efficient technology",
+      "High luminosity",
+      "Compact design",
+      "Eco-friendly material",
+    ],
+    image: "images/slider/p2.png",
+  },
+  {
+    id: 3,
+    title: "LED Batten Light",
+    description:
+      "A stylish and bright solution for homes and offices. Sleek design and excellent performance.",
+    bullets: [
+      "Slim and elegant design",
+      "Bright and uniform lighting",
+      "Easy installation",
+      "Durable construction",
+      "Low power consumption",
+    ],
+    image: "images/products/productnew.webp",
+  },
+  {
+    id: 4,
+    title: "LED Street Lights",
+    description:
+      "Powerful and reliable lighting for streets and public areas. Designed to withstand harsh conditions.",
+    bullets: [
+      "High performance and longevity",
+      "Weather-resistant",
+      "Wide beam coverage",
+      "Energy-efficient technology",
+      "Low maintenance",
+    ],
+    image: "images/slider/p4.png",
+  },
+  {
+    id: 5,
+    title: "LED Flood Lights",
+    description:
+      "High-intensity lighting for outdoor areas. Perfect for stadiums, parking lots, and large spaces.",
+    bullets: [
+      "Exceptional brightness",
+      "Durable and waterproof",
+      "Energy-saving operation",
+      "Wide-angle illumination",
+      "Multiple mounting options",
+    ],
+    image: "images/slider/p1.png",
+  },
+  {
+    id: 6,
+    title: "LED Ceiling Light",
+    description:
+      "Modern lighting solution for a sleek and minimal look. Provides balanced and consistent lighting.",
+    bullets: [
+      "Elegant design",
+      "Soft and soothing light",
+      "Easy to install",
+      "Energy-saving performance",
+      "Long-lasting build quality",
+    ],
+    image: "images/slider/p3.png",
+  },
+];
+
+export const whyUs = [
+  {
+    icon: "/svg/whyus1.svg",
+    title: "High-Efficiency LED Solutions",
+    description:
+      "Our advanced LED lighting solutions deliver exceptional performance while minimizing energy consumption and maintenance needs. Whether for industrial, commercial, educational, or residential spaces, our LEDs offer reliable and eco-friendly illumination that enhances energy efficiency and reduces environmental impact.",
+  },
+  {
+    icon: "/svg/whyus2.svg",
+    title: "Cost-Effective Lighting",
+    description:
+      "Switching to our LED lights can significantly lower your energy bills, with up to 70% energy savings compared to traditional lighting options. Our products are engineered for durability and efficiency, ensuring long-term cost savings by reducing both operational and maintenance expenses.",
+  },
+  {
+    icon: "/svg/whyus3.svg",
+    title: "Expert Guidance and Support",
+    description:
+      "Our team of energy efficiency experts and engineers is here to help you select the perfect LED solution for your unique needs. We offer product evaluations and samples to ensure you make the most informed decision. Additionally, our dedicated project managers are always available to address your questions and provide ongoing support.",
+  },
+  {
+    icon: "/svg/whyus4.svg",
+    title: "Environmentally Friendly",
+    description:
+      "Our LED products are Energy Star certified, guaranteeing top-tier energy performance and reduced environmental impact. By choosing our lighting solutions, you not only cut electricity costs but also contribute to a greener planet. Designed for minimal maintenance and maximum efficiency, our LEDs are the smart choice for sustainable lighting.",
   },
 ];

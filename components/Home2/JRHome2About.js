@@ -8,32 +8,20 @@ export default function JRHome2About() {
             <div className="a_inner">
               <div className="leftpart">
                 <div className="title_holder">
-                  <h3 className="title">Founder&#39;s Statement</h3>
+                  <h3 className="title">
+                    Illuminating Spaces, Inspiring Innovation.
+                  </h3>
                   <p>
-                    Welcome to JR Bond, where our passion for innovation and
-                    excellence drives every product we create. For over 20
-                    years, my journey in the construction chemicals industry has
-                    been about more than just building products—it&#39;s been
-                    about building trust. At JR Bond, we&#39;re proud to offer
-                    solutions that not only meet but exceed industry standards.
-                    Our diverse range of products, from tile adhesives to epoxy
-                    grouts, reflects our unwavering commitment to quality and
-                    performance.
+                    RM Lights stands as a beacon of excellence in the world of
+                    LED lighting solutions. With a focus on quality
+                    craftsmanship and innovative design, we are committed to
+                    delivering products that transform spaces and enhance
+                    experiences. Guided by a vision of sustainability and
+                    progress, our Made in India lighting solutions are a
+                    testament to technological innovation and superior
+                    performance. At RM Lights, we believe in illuminating not
+                    just spaces but also lives, one brilliant light at a time.
                   </p>
-                  <p>
-                    As we embark on this new chapter with JR Bond, I am deeply
-                    grateful to our clients, whose trust has been the
-                    cornerstone of our success. Our mission remains clear: to
-                    continue delivering top-tier construction solutions that
-                    stand the test of time. Together, we look forward to
-                    crafting a future defined by excellence, innovation, and
-                    enduring partnerships. Thank you for being a part of our
-                    journey.
-                  </p>
-                </div>
-                <div className="sign_holder">
-                  <h3 className="name">Mr. Vipul Patel</h3>
-                  {/*  <p className="occ">Founder</p> */}
                 </div>
               </div>
               <div className="rightpart">
@@ -48,7 +36,7 @@ export default function JRHome2About() {
                     <div
                       className="abs_img"
                       style={{
-                        backgroundImage: "url(/Images/founder.jpg)",
+                        backgroundImage: "url(/Images/aboutus1.jpg)",
                         backgroundPosition: "top",
                       }}
                     ></div>

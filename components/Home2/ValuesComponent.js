@@ -8,19 +8,19 @@ import Link from "next/link";
 export default function ValuesComponent() {
   const values = [
     {
-      value: "Quality",
+      value: "Our People",
       description:
-        "At JR Bond, we believe that quality is the cornerstone of our business. Every product we create undergoes rigorous testing and quality control to ensure it meets the highest industry standards. This commitment to quality ensures that our customers receive only the best, enhancing their projects with lasting durability and exceptional performance.",
+        "We believe our people are our greatest strength. By fostering a supportive and inclusive workplace, we empower our team to innovate, excel, and achieve their full potential.",
     },
     {
       value: "Innovation",
       description:
-        "Innovation drives JR Bond to continuously improve and develop new products that meet the evolving requirements and needs of the market. We invest in research and development to stay ahead of industry trends and to offer cutting-edge solutions that provide better results, ease of use, and greater efficiency for our customers helping make better products.",
+        "Innovation is at the heart of everything we do. We are committed to designing advanced, cost-efficient, and high-quality products that drive progress and redefine industry standards.",
     },
     {
-      value: "Customer Satisfaction",
+      value: "Excellence",
       description:
-        "Customer satisfaction is at the heart of everything we do at JR Bond. We strive to understand and anticipate our customers’ needs, providing them with products and services that exceed their expectations. Our dedicated customer support team is always ready to assist, ensuring a seamless experience from purchase to project completion.",
+        "We embrace the philosophy of continuous improvement, aiming for excellence in every aspect of our operations—from product quality to customer satisfaction and beyond.",
     },
   ];
 

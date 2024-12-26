@@ -1,17 +1,13 @@
 import Link from "next/link";
 import LogoImage from "@/public/Images/logo_rm.png";
 import Image from "next/image";
-import { ourProducts } from "@/data";
+import { products } from "@/data";
 
 export default function Footer() {
   return (
     <>
-      <footer className="industify_fn_footer">
+      <footer className="industify_fn_footer bg-white">
         <div className="top_footer">
-          <div
-            className="top_footer_img"
-            style={{ background: "url(/img/footer/bg.jpg)" }}
-          ></div>
           {/* <!-- TRIPLE WIDGET --> */}
           <div className="footer_widget">
             <div className="container">
@@ -22,7 +18,7 @@ export default function Footer() {
                       <div className="logo">
                         <Link href="/">
                           <Image
-                            className="h-16 w-56 object-cover invert m-auto"
+                            className="h-20 w-62 object-contain m-auto"
                             width={400}
                             height={200}
                             src={LogoImage}
@@ -32,9 +28,9 @@ export default function Footer() {
                       </div>
                       <div className="textwidget ml-8">
                         <p>
-                          We are focused on delivering the best in class tile
-                          adhesives, grouts and waterproofing segment, that our
-                          clients would like to choose above anything else.
+                          We are dedicated to producing high-quality lighting
+                          solutions that our customers trust to illuminate their
+                          spaces with efficiency, and innovation.
                         </p>
                       </div>
                     </div>
@@ -46,14 +42,14 @@ export default function Footer() {
                       </div>
                       <div className="widget_nav_menu">
                         <ul className="menu">
-                          {ourProducts.map((category) => {
+                          {products.map((product) => {
                             return (
-                              <li key={category.id}>
+                              <li key={product.id}>
                                 <Link
                                   className="hover:underline"
-                                  href={`/products/${category.id}`}
+                                  href={`/products`}
                                 >
-                                  {category.title}
+                                  {product.title}
                                 </Link>
                               </li>
                             );
@@ -67,15 +63,19 @@ export default function Footer() {
                       <div className="wid-title">
                         <span>Helpful Links</span>
                       </div>
-                      <div className="text-white">
-                        Let&#39;s Connect and Build Together
-                      </div>
-                      <div className="">
-                        <Link href="/contact">
-                          <button className="py-2 px-4 bg-theme-cyan text-white rounded">
-                            Contact Us
-                          </button>
-                        </Link>
+                      <div className="widget_nav_menu">
+                        <ul className="menu">
+                          <li>
+                            <Link className="hover:underline" href={`/about`}>
+                              About Us
+                            </Link>
+                          </li>
+                          <li>
+                            <Link className="hover:underline" href={`/contact`}>
+                              Contact Us
+                            </Link>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </li>
@@ -83,36 +83,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          {/* <!-- /TRIPLE WIDGET --> */}
         </div>
-        {/* <!-- BOTTOM --> */}
-        {/* <div className="footer_bottom">
-          <div className="container">
-            <div className="footer_bottom_in">
-              <div className="bottom_widget">
-                <div className="widget_nav_menu">
-                  <ul className="menu">
-                    <li>
-                      <Link href="/portfolio">Products</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Disclaimer</Link>
-                    </li>
-                    <li>
-                      <Link href="#">Privacy Policy</Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <Link href="#" className="industify_fn_totop">
-                <span className="top"></span>
-                <span className="text">To Top</span>
-              </Link>
-            </div>
-          </div>
-        </div> */}
-        {/* <!-- /BOTTOM --> */}
       </footer>
     </>
   );
