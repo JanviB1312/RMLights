@@ -36,7 +36,7 @@ const ContactInfo = () => {
               </svg>
             }
             title="Mail Here"
-            content="sagarchoudhari763@gmail.com <br/> rmlightsindustriesltd4447@gmail.com"
+            content="rmlightsindustriesltd4447@gmail.com"
           />
           <ContactCard
             icon={
