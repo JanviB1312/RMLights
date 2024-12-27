@@ -3,33 +3,33 @@ export const sliderData = [
     title: "RM LIGHTS – Best Lights Manufactures in INDIA.",
     description:
       "Industify Corporation is ranked #07 on the Fortune 500 with world-class products designed, engineered and manufactured by a diverse team of talented employees. Our vision is to be consistently recognized as the supplier of choice, an employer of choice, the investment of choice and a company that supports the communities where we do business.",
-    image: "images/slider/1.png",
+    image: "Images/slider/1final.png",
   },
 ];
 
 export const homeProducts = [
   {
-    src: "images/slider/p1.png",
+    src: "Images/slider/p1.png",
     alt: "Product 1",
     title: "LED FLOOD LIGHTS",
   },
   {
-    src: "images/slider/p2.png",
+    src: "Images/slider/p2.png",
     alt: "Product 2",
     title: "LED BULB",
   },
   {
-    src: "images/slider/p3.png",
+    src: "Images/slider/p3.png",
     alt: "Product 3",
     title: "LED CEILING LIGHTS",
   },
   {
-    src: "images/slider/p4.png",
+    src: "Images/slider/p4.png",
     alt: "Product 4",
     title: "LED STREET LIGHTS",
   },
   {
-    src: "images/slider/p5.png",
+    src: "Images/slider/p5.png",
     alt: "Product 5",
     title: "LED EMERGENCY BULB",
   },
@@ -47,7 +47,7 @@ export const products = [
       "LED Beam Angle 120°",
       "IP Rating 200°",
     ],
-    image: "images/slider/p5.png",
+    image: "Images/slider/p5.png",
   },
   {
     id: 2,
@@ -61,7 +61,7 @@ export const products = [
       "Compact design",
       "Eco-friendly material",
     ],
-    image: "images/slider/p2.png",
+    image: "Images/slider/p2.png",
   },
   {
     id: 3,
@@ -75,7 +75,7 @@ export const products = [
       "Durable construction",
       "Low power consumption",
     ],
-    image: "images/products/productnew.webp",
+    image: "Images/products/productnew.webp",
   },
   {
     id: 4,
@@ -89,7 +89,7 @@ export const products = [
       "Energy-efficient technology",
       "Low maintenance",
     ],
-    image: "images/slider/p4.png",
+    image: "Images/slider/p4.png",
   },
   {
     id: 5,
@@ -103,7 +103,7 @@ export const products = [
       "Wide-angle illumination",
       "Multiple mounting options",
     ],
-    image: "images/slider/p1.png",
+    image: "Images/slider/p1.png",
   },
   {
     id: 6,
@@ -117,7 +117,7 @@ export const products = [
       "Energy-saving performance",
       "Long-lasting build quality",
     ],
-    image: "images/slider/p3.png",
+    image: "Images/slider/p3.png",
   },
 ];
 

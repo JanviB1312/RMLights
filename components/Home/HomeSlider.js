@@ -63,10 +63,48 @@ export default function HomeSlider() {
                     className="img_holder"
                     style={{ backgroundImage: `url(${image})` }}
                   >
-                    <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+                    <div className="absolute inset-0 bg-black bg-opacity-20"></div>
                   </div>
                   <div className="f-slider-one-data">
                     <h1>{title}</h1>
+                    <div className="social-media-icons">
+                      <a
+                        href="https://facebook.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="Images/slider/instagramlogo.png"
+                          alt="Facebook"
+                          className="social-icon"
+                        />
+                      </a>
+                      <a
+                        href="https://twitter.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="Images/slider/instagramlogo.png"
+                          alt="Twitter"
+                          className="social-icon"
+                        />
+                      </a>
+                      <a
+                        href="https://linkedin.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="Images/slider/instagramlogo.png"
+                          alt="LinkedIn"
+                          className="social-icon"
+                        />
+                      </a>
+                    </div>
+                    <button className="free-estimate-btn">
+                      Get a Free Estimate
+                    </button>
                   </div>
                 </div>
               </SwiperSlide>
