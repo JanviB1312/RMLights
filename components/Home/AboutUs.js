@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 
 const AboutUs = () => {
   const handleSubmit = (e) => {
@@ -9,11 +10,13 @@ const AboutUs = () => {
   return (
     <div>
       <div className="overview-container">
-        {/* Left Div */}
         <div className="overview-left">
           <div className="overview">
-            <div className="heading-style">
-              <h1>About Us</h1>
+            <div>
+              <h1 className="heading">
+                <span className="heading-style">About</span>
+                <span className="heading-style2">Us</span>
+              </h1>
             </div>
             <p className="overview-text">
               RM LIGHTS is a leading manufacturer of high-quality indoor and
@@ -29,6 +32,36 @@ const AboutUs = () => {
               applications, RM LIGHTS is your trusted partner for cutting-edge
               LED lighting solutions in India.
             </p>
+            <Link href="/about">
+              <button className="pro-button">Learn More</button>
+            </Link>
+          </div>
+
+          <div className="call-now">
+            <div className="elementor-icon-box-wrapper">
+              <div className="elementor-icon-box-icon">
+                <a
+                  className="elementor-icon"
+                  href="tel:+919881984100"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i aria-hidden="true" className="fas fa-phone"></i>
+                </a>
+              </div>
+              <div className="elementor-icon-box-content">
+                <h6 className="elementor-icon-box-title">
+                  <a
+                    href="tel:+919881984100"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    24/7 Emergency Service
+                  </a>
+                </h6>
+                <p className="elementor-icon-box-description">+91 9881984100</p>
+              </div>
+            </div>
           </div>
         </div>
 

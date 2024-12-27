@@ -3,8 +3,11 @@ import { whyUs } from "../../data.js";
 const WhyChooseUs = () => {
   return (
     <div className="why-choose-us">
-      <div className="heading-style">
-        <h1>Why Choose Us ?</h1>
+      <div>
+        <h1 className="heading" style={{ justifyContent: "center" }}>
+          <span className="heading-style">Why</span>
+          <span className="heading-style2">Choose Us</span>
+        </h1>
       </div>
       <div className="cards-container">
         {whyUs.map((card, index) => (

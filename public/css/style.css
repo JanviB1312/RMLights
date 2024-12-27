@@ -10269,27 +10269,43 @@ blockquote {
 .f-slider-one-data h1 {
   font-size: 4rem;
   max-width: 800px;
-  margin-bottom: 20px; /* Add spacing between title and icons */
+  margin-bottom: 20px;
 }
 
 .social-media-icons {
   display: flex;
-  gap: 15px; /* Space between icons */
-  margin-top: 280px; /* Fine-tune spacing if needed */
+  gap: 15px;
+  margin-top: 350px;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .social-media-icons a {
   display: inline-block;
+  position: relative;
+  z-index: 20;
+}
+
+.social-media-icons .social-icon-wrapper {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-media-icons .social-icon-wrapper:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 .social-media-icons .social-icon {
   width: 40px;
   height: 40px;
-  transition: transform 0.3s;
-}
-
-.social-media-icons a:hover .social-icon {
-  transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 .free-estimate-btn {
@@ -10308,6 +10324,52 @@ blockquote {
   background-color: #0056b3;
 }
 
+.icon-with-text {
+  display: flex;
+  justify-content: center; /* Centers the icon and text horizontally */
+  align-items: center; /* Vertically aligns the icon and text */
+}
+
+.icon-with-text .elementor-icon-list-icon {
+  font-size: 32px; /* Make the icon bigger */
+  color: blue; /* Icon color set to blue */
+  margin-right: 10px; /* Space between the icon and the text */
+}
+
+.icon-with-text .location-text {
+  font-size: 18px; /* Adjust font size for the text */
+  color: white; /* Set a default color for the text */
+}
+/* call now */
+.call-now {
+  margin-top: 20px;
+}
+
+.elementor-icon-box-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 20px;
+}
+
+.elementor-icon-box-icon a {
+  font-size: 24px;
+  color: #213dfc;
+}
+
+.elementor-icon-box-content h6 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.elementor-icon-box-content p {
+  margin: 0;
+  color: #666;
+  font-size: 32px;
+  color: #213dfc;
+  font-weight: bold;
+}
 
 /* overview */
 .overview-title {
@@ -10329,7 +10391,7 @@ blockquote {
 }
 
 .overview-text {
-  font-size: 22px;
+  font-size: 18px;
   color: #7f8c8d;
   line-height: 1.8;
 }
@@ -10520,8 +10582,8 @@ body {
   }
 }
 
-.heading-style {
-  text-align: left; /* Center-align the heading container */
+/* .heading-style {
+  text-align: left;
   margin-left: 15px;
 }
 
@@ -10548,17 +10610,94 @@ body {
   height: 7px;
   width: 7px;
   border-radius: 50%;
-  bottom: 12px;
+  top: 50%; 
+  transform: translateY(-50%); 
 }
 
 .heading-style h1:before {
   left: -20px;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .heading-style h1:after {
   right: -20px;
-  transform: translateX(50%);
+  transform: translate(50%, -50%);
+} */
+.heading {
+  display: flex;
+  gap: 8px;
+}
+.heading-style {
+  color: black;
+  padding: 3px;
+  border: solid;
+}
+.heading-style2 {
+  color: white;
+  background-color: #001da8;
+  padding: 5px 15px 5px 15px;
+  font-weight: 500;
+}
+
+/* 'About' word styling */
+.about-style {
+  text-align: left;
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+/* New style for 'Us' */
+.us-style {
+  color: #ffffff;
+  background-color: var(
+    --e-global-color-6cd69d8
+  ); /* This is the custom background color */
+  padding: 5px 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 10px; /* Space between 'About' and 'Us' */
+}
+
+.header-with-button {
+  display: flex;
+  justify-content: space-between; /* Space between heading and button */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 30px; /* Adjust spacing as needed */
+}
+
+.view-products-button {
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #213dfc;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.view-products-button:hover {
+  background-color: #001da8;
+}
+
+@media (max-width: 768px) {
+  .header-with-button {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .view-products-button {
+    margin-top: 10px;
+    width: 100%;
+  }
 }
 
 /*  ----------------- product slider ---------------- */
@@ -10687,7 +10826,7 @@ body {
   margin-top: 5%;
   position: relative;
   padding: 50px 20px;
-  background-image: url("/Images/whyus/bgimage2.png");
+  background-image: url("/Images/chooseusbg.png");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -10788,8 +10927,8 @@ body {
 
 /* COUNTER */
 .counter-section {
-  background-color: #f9f9f9;
   padding: 50px 20px;
+  margin-bottom: 50px;
 }
 
 .counter-container {
@@ -10808,7 +10947,7 @@ body {
 }
 
 .counter-block .count-box .number {
-  font-size: 2rem;
+  font-size: 64px;
   font-weight: 700;
   color: #213dfc;
 }
@@ -10819,7 +10958,11 @@ body {
   font-weight: 500;
   color: #333;
 }
-
+@media screen and (max-width: 768px) {
+  .social-media-icons {
+    margin-top: 500px;
+  }
+}
 @media screen and (max-width: 768px) {
   .counter-container {
     flex-direction: column;
@@ -10834,7 +10977,7 @@ body {
   }
 
   .counter-block .count-box .number {
-    font-size: 1.5rem;
+    font-size: 40px;
   }
 
   .counter-block .counter-title {
@@ -10979,7 +11122,7 @@ body {
 }
 
 /* Need Help */
-.needhelp-container {
+/* .needhelp-container {
   position: relative;
   background-image: url("/Images/BlueBg.png");
   background-size: cover;
@@ -10987,9 +11130,56 @@ body {
   height: 400px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  text-align: left;
   flex-direction: column;
+}
+.needhelp-subcontainer {
+  max-width: 450px;
+  margin-left: 20px;
+}
+
+.needhelp-heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  font-family: "Cursive", sans-serif;
+  margin-bottom: 20px;
+}
+
+.needhelp-description {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.needhelp-button {
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: white;
+  color: #213dfc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+} */
+
+.needhelp-container {
+  position: relative;
+  background-image: url("/Images/BlueBg.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 40px;
+  overflow: visible;
+}
+
+.needhelp-subcontainer {
+  max-width: 450px;
 }
 
 .needhelp-heading {
@@ -11017,15 +11207,34 @@ body {
   font-weight: 600;
 }
 
-@media screen and (max-width: 768px) {
+.needhelp-image {
+  position: relative;
+  /* height: 90%;
+  max-height: 350px; */
+  width: auto;
+  margin-right: -5%;
+  object-fit: cover;
+  height: 510px;
+}
+
+@media (max-width: 768px) {
   .needhelp-container {
-    height: 350px;
+    flex-direction: column; /* Stack content vertically */
     padding: 20px;
+    height: auto; /* Allow height to adjust based on content */
+    text-align: center;
+    .img {
+      display: none;
+    }
+  }
+
+  .needhelp-subcontainer {
+    max-width: 100%;
+    padding: 20px 0;
   }
 
   .needhelp-heading {
     font-size: 28px;
-    margin-bottom: 15px;
   }
 
   .needhelp-description {
@@ -11034,8 +11243,48 @@ body {
   }
 
   .needhelp-button {
-    padding: 10px 25px;
-    font-size: 16px;
+    width: 100%; /* Full width on mobile */
+    padding: 15px;
+  }
+
+  .needhelp-image {
+    display: none; /* Hide image on mobile */
+  }
+}
+
+/* Responsive for iPad Air and iPad Mini */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .needhelp-container {
+    flex-direction: row; /* Maintain row layout for tablets */
+    text-align: left;
+    padding: 20px;
+    height: auto;
+    background-image: url("/Images/BlueBg.png"); /* Ensure background image for tablets */
+  }
+
+  .needhelp-subcontainer {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .needhelp-heading {
+    font-size: 32px;
+  }
+
+  .needhelp-description {
+    font-size: 15px;
+  }
+
+  .needhelp-button {
+    width: auto; /* Allow button width to adjust naturally */
+    padding: 12px 25px;
+  }
+
+  .needhelp-image {
+    width: 100%; /* Ensure image adjusts to container width */
+    height: auto;
+    margin-right: 0;
+    object-fit: contain;
   }
 }
 
@@ -11075,8 +11324,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px; /* Size of the circle */
-  height: 50px; /* Size of the circle */
+  width: 10px; /* Size of the circle */
+  height: 10px; /* Size of the circle */
   border-radius: 50%; /* Makes the background circular */
   background-color: #0044cc; /* Circle background color */
   margin-bottom: 15px;

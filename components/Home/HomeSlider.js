@@ -68,43 +68,40 @@ export default function HomeSlider() {
                   <div className="f-slider-one-data">
                     <h1>{title}</h1>
                     <div className="social-media-icons">
-                      <a
-                        href="https://facebook.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          src="Images/slider/instagramlogo.png"
-                          alt="Facebook"
-                          className="social-icon"
-                        />
+                      <a href="https://x.com/sagar_chou52083?t=8LmAPMt79RyGjm3gFeZ1Lw&s=09">
+                        <div className="social-icon-wrapper">
+                          <img
+                            src="Images/slider/twitter.png"
+                            alt="Twitter"
+                            className="social-icon"
+                          />
+                        </div>
                       </a>
-                      <a
-                        href="https://twitter.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          src="Images/slider/instagramlogo.png"
-                          alt="Twitter"
-                          className="social-icon"
-                        />
-                      </a>
-                      <a
-                        href="https://linkedin.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          src="Images/slider/instagramlogo.png"
-                          alt="LinkedIn"
-                          className="social-icon"
-                        />
+
+                      <a href="https://www.instagram.com/r_m_lights_industries_private_/profilecard/?igsh=OWdnZ3Ryc2Nkc2U2">
+                        <div className="social-icon-wrapper">
+                          <img
+                            src="Images/slider/insta.png"
+                            alt="Instagram"
+                            className="social-icon"
+                          />
+                        </div>
                       </a>
                     </div>
                     <button className="free-estimate-btn">
                       Get a Free Estimate
                     </button>
+                    <div className="icon-with-text">
+                      <span className="elementor-icon-list-icon">
+                        <i
+                          aria-hidden="true"
+                          className="fas fa-map-marker-alt"
+                        ></i>
+                      </span>
+                      <span className="location-text">
+                        Aurangabad, Maharashtra
+                      </span>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>

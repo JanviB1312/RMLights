@@ -1,8 +1,5 @@
 "use client";
-import Link from "next/link";
-import Breadcumb from "@/layouts/breadcumb";
 import { useState } from "react";
-import ModalVideo from "react-modal-video";
 const headerBG = "img/hero.jpg";
 
 export default function Home3Hero() {
