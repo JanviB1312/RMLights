@@ -75,7 +75,7 @@ export const products = [
       "Durable construction",
       "Low power consumption",
     ],
-    image: "Images/products/productnew.webp",
+    image: "Images/products/p3.jpg",
   },
   {
     id: 4,

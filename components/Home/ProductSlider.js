@@ -97,9 +97,6 @@ const ProductSlider = () => {
                   />
                   <div className="carousel__description">
                     <h3 className="carousel__title">{product.title}</h3>
-                    {/*  <span className="carousel__subtitle">
-                      Some subtitle goes here
-                    </span> */}
                   </div>
                 </a>
               </li>
