@@ -3,7 +3,7 @@ export const sliderData = [
     title: "RM LIGHTS – Best Lights Manufactures in INDIA.",
     description:
       "Industify Corporation is ranked #07 on the Fortune 500 with world-class products designed, engineered and manufactured by a diverse team of talented employees. Our vision is to be consistently recognized as the supplier of choice, an employer of choice, the investment of choice and a company that supports the communities where we do business.",
-    image: "Images/slider/1final.webp",
+    image: "Images/slider/1final.png",
   },
 ];
 
