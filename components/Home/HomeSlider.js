@@ -2,6 +2,7 @@
 import { sliderData } from "@/data";
 import { register } from "swiper/element/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Link from "next/link";
 
 // register Swiper custom elements
 register();
@@ -62,11 +63,19 @@ export default function HomeSlider() {
                   <div
                     className="img_holder"
                     style={{ backgroundImage: `url(${image})` }}
-                  >
-                    {/* <div className="absolute inset-0 bg-black bg-opacity-20"></div> */}
-                  </div>
+                  ></div>
                   <div className="f-slider-one-data">
-                    <h1>{title}</h1>
+                    <p>Your Best LED LIGHTS Solution!!!</p>
+                    <br />
+                    <h1>
+                      RM LIGHTS – <br /> Best Lights Manufactures in INDIA.
+                    </h1>
+                    <Link href="/contact">
+                      <button className="free-estimate-btn">
+                        Get a Free Estimate
+                      </button>
+                    </Link>
+
                     <div className="social-media-icons">
                       <a href="https://x.com/sagar_chou52083?t=8LmAPMt79RyGjm3gFeZ1Lw&s=09">
                         <div className="social-icon-wrapper">
@@ -88,9 +97,7 @@ export default function HomeSlider() {
                         </div>
                       </a>
                     </div>
-                    <button className="free-estimate-btn">
-                      Get a Free Estimate
-                    </button>
+
                     <div className="icon-with-text">
                       <span className="elementor-icon-list-icon">
                         <i
@@ -99,7 +106,7 @@ export default function HomeSlider() {
                         ></i>
                       </span>
                       <span className="location-text">
-                        Aurangabad, Maharashtra
+                        <b>Aurangabad, Maharashtra</b>
                       </span>
                     </div>
                   </div>

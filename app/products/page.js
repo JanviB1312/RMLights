@@ -7,8 +7,27 @@ import NeedHelp from "@/components/Home/NeedHelp.js";
 export default function page() {
   return (
     <Layout>
-      <div className="pro-header">
-        <h1 className="pro-title-header">Our Products</h1>
+      <div
+        className="fn_cs_hero_header_contact"
+        style={{ marginBottom: "30px" }}
+      >
+        <div className="content_holder max800">
+          <div className="title_holder">
+            <h3>Our Products</h3>
+          </div>
+        </div>
+        <div className="bg_holder">
+          <div
+            className="o_img"
+            style={{
+              backgroundImage: `url(/Images/bg2.jpg)`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></div>
+          <div className="o_color"></div>
+        </div>
       </div>
       <div className="pro-container">
         {products.map((product, index) => {

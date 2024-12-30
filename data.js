@@ -9,27 +9,27 @@ export const sliderData = [
 
 export const homeProducts = [
   {
-    src: "Images/slider/p1.png",
+    src: "Images/products/p1.png",
     alt: "Product 1",
     title: "LED FLOOD LIGHTS",
   },
   {
-    src: "Images/slider/p2.png",
+    src: "Images/products/p2.png",
     alt: "Product 2",
     title: "LED BULB",
   },
   {
-    src: "Images/slider/p3.png",
+    src: "Images/products/p3.png",
     alt: "Product 3",
     title: "LED CEILING LIGHTS",
   },
   {
-    src: "Images/slider/p4.png",
+    src: "Images/products/p4.png",
     alt: "Product 4",
     title: "LED STREET LIGHTS",
   },
   {
-    src: "Images/slider/p5.png",
+    src: "Images/products/p5.png",
     alt: "Product 5",
     title: "LED EMERGENCY BULB",
   },
@@ -47,7 +47,7 @@ export const products = [
       "LED Beam Angle 120°",
       "IP Rating 200°",
     ],
-    image: "Images/slider/p5.png",
+    image: "Images/products/p5.png",
   },
   {
     id: 2,
@@ -61,7 +61,7 @@ export const products = [
       "Compact design",
       "Eco-friendly material",
     ],
-    image: "Images/slider/p2.png",
+    image: "Images/products/p2.png",
   },
   {
     id: 3,
@@ -89,7 +89,7 @@ export const products = [
       "Energy-efficient technology",
       "Low maintenance",
     ],
-    image: "Images/slider/p4.png",
+    image: "Images/products/p4.png",
   },
   {
     id: 5,
@@ -103,7 +103,7 @@ export const products = [
       "Wide-angle illumination",
       "Multiple mounting options",
     ],
-    image: "Images/slider/p1.png",
+    image: "Images/products/p1.png",
   },
   {
     id: 6,
@@ -117,7 +117,7 @@ export const products = [
       "Energy-saving performance",
       "Long-lasting build quality",
     ],
-    image: "Images/slider/p3.png",
+    image: "Images/products/p3.png",
   },
 ];
 

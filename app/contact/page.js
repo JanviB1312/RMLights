@@ -10,8 +10,24 @@ export const metadata = {
 export default function page() {
   return (
     <Layout>
-      <div className="pro-header">
-        <h1 className="pro-title-header">Contact Us</h1>
+      <div className="fn_cs_hero_header_contact">
+        <div className="content_holder max800">
+          <div className="title_holder">
+            <h3>Contact Us</h3>
+          </div>
+        </div>
+        <div className="bg_holder">
+          <div
+            className="o_img"
+            style={{
+              backgroundImage: `url(/Images/bg2.jpg)`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></div>
+          <div className="o_color"></div>
+        </div>
       </div>
 
       <div className="industify_fn_contact">
