@@ -11049,12 +11049,12 @@ body {
   font-weight: 500;
   color: #333;
 }
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .social-media-icons {
     margin-top: 500px;
   }
-} */
-/* @media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 768px) {
   .counter-container {
     flex-direction: column;
     align-items: center;
@@ -11075,7 +11075,7 @@ body {
     font-size: 1rem;
   }
 }
- */
+
 /* Products page */
 .pro-container {
   padding: 50px;
@@ -11603,7 +11603,6 @@ body {
 }
 
 @media (max-width: 768px) {
- 
   .industify_slider_alpha .item {
     height: 70vh;
   }
