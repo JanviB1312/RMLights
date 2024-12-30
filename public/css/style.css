@@ -10269,7 +10269,7 @@ blockquote {
 .social-media-icons {
   display: flex;
   gap: 15px;
-  margin-top: 40px;
+  margin-top: 10px;
   cursor: pointer;
   z-index: 10;
 }
@@ -10335,10 +10335,15 @@ blockquote {
   color: #001da8;
   margin-right: 10px;
 }
+.icon-with-text .location-box {
+  background-color: #001da8;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 
 .icon-with-text .location-text {
   font-size: 18px;
-  color: white;
+  color: white; /* Text color */
 }
 
 @media screen and (max-width: 768px) {
@@ -10381,15 +10386,15 @@ blockquote {
 }
 @media screen and (max-width: 480px) {
   .f-slider-one-data {
-    padding: 120px 15px 15px 15px;
+    padding: 80px 15px 15px 15px;
   }
 
   .f-slider-one-data h1 {
-    font-size: 1.2rem;
+    font-size: 32px;
   }
 
   .f-slider-one-data p {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
 
   .social-media-icons .social-icon-wrapper {
@@ -10414,6 +10419,10 @@ blockquote {
   .social-media-icons .social-icon-wrapper {
     width: 25px;
     height: 25px;
+    img {
+      width: 25px;
+      height: 25px;
+    }
   }
 
   .social-media-icons .social-icon {
@@ -11591,6 +11600,50 @@ body {
 .carousel__subtitle {
   font-size: 14px;
   color: #666;
+}
+
+@media (max-width: 768px) {
+ 
+  .industify_slider_alpha .item {
+    height: 70vh;
+  }
+  .carousel__item {
+    width: 280px;
+    height: 350px;
+  }
+
+  .carousel__item__image {
+    height: 280px;
+  }
+
+  .carousel__title {
+    font-size: 16px;
+  }
+
+  .carousel__arrow {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel__item {
+    width: 255px;
+    height: 277px;
+  }
+
+  .carousel__item__image {
+    height: 220px;
+  }
+
+  .carousel__title {
+    font-size: 14px;
+  }
+
+  .carousel__arrow {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .fn_cs_hero_header_contact {

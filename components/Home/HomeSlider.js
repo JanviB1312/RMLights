@@ -105,9 +105,11 @@ export default function HomeSlider() {
                           className="fas fa-map-marker-alt"
                         ></i>
                       </span>
-                      <span className="location-text">
-                        <b>Aurangabad, Maharashtra</b>
-                      </span>
+                      <div className="location-box">
+                        <span className="location-text">
+                          <b>Aurangabad, Maharashtra</b>
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
